@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Dana";
+	src: url('../fonts/Dana-FaNum-Regular.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Dana";
+	src: url('../fonts/Dana-FaNum-Medium.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Dana";
+	src: url('../fonts/Dana-FaNum-Bold.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 700;
+}
