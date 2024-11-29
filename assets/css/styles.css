@@ -1,5 +1,6 @@
 @import url("./reset.css");
 @import url("./fonts.css");
+@import url("./grid-system.css");
 
 :root{
     --orange: #ff5722;
@@ -9,6 +10,7 @@
 
 body{
     font-family: "Dana";
+    overflow-x: hidden;
 }
 
 a{
@@ -30,6 +32,7 @@ li{
     border-bottom: 1px solid #ddd;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -54,7 +57,7 @@ li{
     align-items: center;
 }
 
-.item-menu-header-tapsi:not(:last-child){
+.item-menu-header-tapsi:not(:first-child):not(:last-child){
     margin-left: 30px;
 }
 
@@ -82,5 +85,19 @@ li{
     transform: scale(0.98);
 }
 
+.bars-header-tapsi{
+    display: none;
+}
 
+.bars-header-tapsi ion-icon{
+    color: #000;
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width:768px){
+    .bars-header-tapsi{
+        display: block;
+    }
+}
 /* end header section styles */
