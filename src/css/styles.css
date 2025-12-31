@@ -64,9 +64,10 @@ li{
 
 .main-menu-header-tapsi{
     display: flex;
+    align-items: center;
 }
 
-.menu-item-header-tapsi:not(:first-child){
+.menu-item-header-tapsi{
     margin-left: 32px;
 }
 
@@ -80,11 +81,11 @@ li{
     color: var(--orange);
 }
 
-.menu-item-header-tapsi input#hamburger{
+.menu-and-btn-header-tapsi input#hamburger{
     display: none;
 }
 
-.menu-item-header-tapsi .bars{
+.bars-header-tapsi .bars{
     width: 24px;
     height: 2px;
     background-color: #101010;
@@ -93,16 +94,24 @@ li{
     transition: transform .5s ease, opacity .25s ease;
 }
 
-.menu-item-header-tapsi input#hamburger:checked ~ label .bar-top{
+.menu-and-btn-header-tapsi input#hamburger:checked ~ label .bar-top{
     transform: translateY(7px) rotate(-45deg);
 }
 
-.menu-item-header-tapsi input#hamburger:checked ~ label .bar-middle{
+.menu-and-btn-header-tapsi input#hamburger:checked ~ label .bar-middle{
     opacity: 0;
 }
 
-.menu-item-header-tapsi input#hamburger:checked ~ label .bar-bottom{
+.menu-and-btn-header-tapsi input#hamburger:checked ~ label .bar-bottom{
     transform: translateY(-7px) rotate(45deg);
+}
+
+.menu-and-btn-header-tapsi input#hamburger:checked ~ .main-menu-header-tapsi{
+    display: block;
+}
+
+.menu-and-btn-header-tapsi input#hamburger:checked ~ .main-menu-header-tapsi .btn-header-tapsi{
+    display: block;
 }
 
 .btn-header-tapsi{
@@ -135,12 +144,45 @@ li{
     display: none;
 }
 
+.banner-header-tapsi{
+    background-image: url(../../public/img/header-banner-desktop.gif);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    min-height: 75px;
+    position: sticky;
+    top: 60px;
+}
+
+@media only screen and (max-width:576px){
+    .banner-header-tapsi{
+        min-height: 40px;
+    }
+}
+
 @media only screen and (max-width:768px){
     .bars-header-tapsi{
         display: block;
     }
-    .menu-item-header-tapsi:not(:first-child){
+    .main-menu-header-tapsi{
         display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, .05);
+        padding: 1rem 0;
+    }
+    .menu-item-header-tapsi{
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+    .main-menu-header-tapsi .btn-header-tapsi{
+        margin-top: 1rem;
+        text-align: center;
+        line-height: 40px;
     }
 }
 
