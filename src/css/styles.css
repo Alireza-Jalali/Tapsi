@@ -29,6 +29,41 @@ li{
     list-style: none;
 }
 
+.responsive-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.primary-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    height: 68px;
+    border-radius: 34px;
+    padding: 0 32px;
+    line-height: 32px;
+}
+
+.secondary-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    font-size: 18px;
+    font-weight: 500;
+    height: 68px;
+    border-radius: 34px;
+    padding: 0 32px;
+    line-height: 32px;
+}
+
 /* start header section styles */
 .header-tapsi{
     width: 100%;
@@ -157,7 +192,7 @@ li{
 
 @media only screen and (max-width:576px){
     .banner-header-tapsi{
-        min-height: 40px;
+        min-height: 45px;
     }
 }
 
@@ -192,3 +227,86 @@ li{
     }
 }
 /* end header section styles */
+
+/* start section-1 styles */
+.section-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    background-color: #F5F7F7;
+}
+
+.hero-title-tapsi{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title-tapsi h1 span{
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    height: 72px;
+}
+
+.mobile-banner-tapsi{
+    display: none;
+}
+
+.btn-wrapper-tapsi{
+    display: flex;
+    gap: 24px;
+    padding: 1rem 0;
+}
+
+.hero-banner-tapsi{
+    width: 50%;
+}
+
+.hero-banner-tapsi img{
+    border-radius: 40px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, .12);
+}
+
+@media only screen and (max-width:768px){
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+    .hero-title-tapsi{
+        width: 100%;
+        text-align: center;
+    }
+    .main-title-tapsi{
+        padding: 32px 0 0 0; 
+    }
+    .hero-title-tapsi h1 span{
+        font-size: 28px;
+        height: 48px;
+    }
+    .mobile-banner-tapsi{
+        display: block;
+    }
+    .mobile-banner-tapsi img{
+        border-radius: 20px;
+        box-shadow: 0 0 16px 0 rgba(0, 0, 0, .12);
+    }
+    .btn-wrapper-tapsi{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem 1.5rem;
+    }
+    .btn-wrapper-tapsi .primary-btn,.secondary-btn{
+        height: 52px;
+    }
+    .hero-banner-tapsi{
+        width: 100%;
+        display: none;
+    }
+}
+/* end section-1 styles */
