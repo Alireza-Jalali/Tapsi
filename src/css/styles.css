@@ -17,7 +17,6 @@
 body{
     font-family: Vazirmatn;
     overflow-x: hidden;
-    height: 2000px;
 }
 
 a{
@@ -234,6 +233,7 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-column-gap: 63px;
     padding: 100px 10%;
     background-color: #F5F7F7;
 }
@@ -310,3 +310,109 @@ li{
     }
 }
 /* end section-1 styles */
+
+/* start register section styles */
+.register-tapsi{
+    width: 100%;
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 150px;
+}
+
+.register-right-tapsi{
+    width: 50%;
+    display: flex;
+}
+
+.register-right-tapsi img{
+    width: 100%;
+}
+
+.register-left-tapsi{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-left-tapsi h2{
+    color: #141414;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.register-left-tapsi ul li{
+    list-style: disc;
+    color: #333333;
+    font-size: 18px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+.btn-wrapper-register-tapsi{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    gap: 70px;
+}
+
+.btn-wrapper-register-tapsi > a{
+    height: 52px;
+    padding: 0 24px;
+    font-size: 16px;
+}
+
+.download-tapsi-driver-btn-tapsi{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 14px;
+}
+
+.download-tapsi-driver-btn-tapsi > a{
+    padding: 0 10px;
+}
+
+.download-tapsi-driver-btn-tapsi > svg{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+@media only screen and (max-width:768px){
+    .register-tapsi{
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 50px;
+        padding: 48px 20px;
+    }
+    .register-right-tapsi{
+        width: 100%;
+    }
+    .register-left-tapsi{
+        width: 100%;
+    }
+    .register-left-tapsi h2{
+        font-size: 20px;
+    }
+    .register-left-tapsi ul li{
+        font-size: 14px;
+    }
+    .btn-wrapper-register-tapsi{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .btn-wrapper-register-tapsi a:first-child{
+        height: 40px;
+        font-size: 14px;
+    }
+    .download-tapsi-driver-btn-tapsi{
+        padding: 0 10px!important;
+    }
+    .download-tapsi-driver-btn-tapsi span{
+        font-size: 14px;
+    }
+}
+/* end register section styles */
