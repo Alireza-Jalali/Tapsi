@@ -190,6 +190,7 @@ li{
     min-height: 75px;
     position: sticky;
     top: 60px;
+    z-index: 998;
 }
 
 @media only screen and (max-width:576px){
@@ -545,6 +546,7 @@ li{
 .install-right-tapsi h2{
     color: #141414;
     font-size: 32px;
+    line-height: 48px;
 }
 
 .install-right-tapsi p{
@@ -618,3 +620,71 @@ li{
     }
 }
 /* end install section styles */
+
+/* start weblog section styles */
+.weblog-tapsi{
+    width: 100%;
+    padding: 8% 10%;
+}
+
+.weblog-tapsi h2{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.weblog-wrapper-tapsi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.weblog-card-tapsi{
+    padding: 25px;
+    width: 33%;
+}
+
+.weblog-card-tapsi img{
+    border-radius: 12px;
+}
+
+.weblog-card-tapsi h3{
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 25px 0 15px 0;
+}
+
+.weblog-card-tapsi p{
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #9b9b9b;
+    font-size: 18px;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.weblog-card-tapsi:hover{
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+}
+
+@media only screen and (max-width:768px){
+    .weblog-tapsi{
+        width: 100%;
+        padding: 6%;
+    }
+    .weblog-tapsi h2{
+        font-size: 22px;
+    }
+    .weblog-wrapper-tapsi{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .weblog-card-tapsi{
+        padding: 0 0 50px 0;
+        width: 100%;
+    }
+}
+/* end weblog section styles */
