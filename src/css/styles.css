@@ -686,6 +686,9 @@ li{
         padding: 0 0 50px 0;
         width: 100%;
     }
+    .weblog-card-tapsi h3{
+        font-size: 16px;
+    }
 }
 /* end weblog section styles */
 /* start footer section styles */
@@ -827,6 +830,7 @@ li{
         font-size: 14px;
         margin-top: 1rem;
         color: #acacac;
+        text-align: center;
     }
     .social-links{
         display: flex;
