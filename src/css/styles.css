@@ -816,6 +816,7 @@ li{
     }
     .trust-logo{
         padding: 0;
+        padding: 10px;
     }
     .social-footer-tapsi{
         display: flex;
