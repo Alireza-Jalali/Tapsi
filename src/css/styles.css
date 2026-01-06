@@ -688,3 +688,149 @@ li{
     }
 }
 /* end weblog section styles */
+/* start footer section styles */
+.footer-tapsi{
+    background-color: #000;
+    color: #fff;
+    padding: 5% 10%;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brand-col{
+    width: 15%;
+    font-size: 12px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.brand-col a{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.brand-col h3{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.brand-col p{
+    color: #acacac;
+}
+
+.footer-col h6{
+    font-size: 18px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.footer-col ul li a{
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.footer-col ul li a:hover{
+    color: #ff5722;;
+}
+
+.trust-col{
+    display: flex;
+    justify-content: stretch;
+    gap: 0.75rem;
+    width: 26%;
+}
+
+.trust-logo{
+    background-color: #fff;
+    border-radius: 12px;
+    width: 120px;
+    max-width: 120px;
+    padding: 65px 0;
+}
+
+.trust-logo img[alt]{
+    color: #000;
+    font-size: 12px;
+}
+
+.social-footer-tapsi{
+    margin-top: 1rem;
+}
+
+.social-footer-tapsi h3{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.social-footer-tapsi p{
+    display: none;
+}
+
+.social-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links li a svg{
+    width: 23px;
+    height: 23px;
+}
+
+.social-links li a svg:hover path{
+    fill: #FB8121;
+}
+
+@media only screen and (max-width:768px){
+    .footer-tapsi{
+        padding: 30px 1rem;
+    }   
+    .footer-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .brand-col{
+        width: 100%;
+        margin-left: 0;
+    }
+    .brand-col a{
+        margin-bottom: 0;
+    }
+    .brand-col p{
+        display: none;
+    }
+    .trust-col{
+        width: 100%;
+    }
+    .trust-logo{
+        padding: 0;
+    }
+    .social-footer-tapsi{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .social-footer-tapsi h3{
+        display: none;
+    }
+    .social-footer-tapsi p{
+        display: block;
+        font-size: 14px;
+        margin-top: 1rem;
+        color: #acacac;
+    }
+    .social-links{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+/* end footer section styles */
