@@ -345,6 +345,15 @@ li{
     padding: 0 5px;
 }
 
+.nav-wrapper .nav-item:first-child{
+    width: 0%;
+    margin-left: 0;
+}
+
+.nav-wrapper .nav-item:last-child{
+    margin-left: 0;
+}
+
 .nav-wrapper .nav-item:not(:nth-child(2)){
     filter: opacity(0.35);
 }
