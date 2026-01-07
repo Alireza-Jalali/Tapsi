@@ -231,9 +231,10 @@ li{
 }
 /* end header section styles */
 
-/* start section-1 styles */
-.section-1{
+/* start first section styles */
+.first-section-tapsi{
     width: 100%;
+    height: calc(100vh - 135px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -275,7 +276,8 @@ li{
 }
 
 @media only screen and (max-width:768px){
-    .section-1{
+    .first-section-tapsi{
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -313,7 +315,121 @@ li{
         display: none;
     }
 }
-/* end section-1 styles */
+/* end first section styles */
+
+/* start services section styles */
+.services-tapsi{
+    padding: 30px 10% 100px 10%;
+}
+
+.services-tapsi h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.services-nav{
+    margin: 50px 0;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 5px 15px;
+}
+
+.nav-wrapper .nav-item{
+    margin-left: 25px;
+    padding: 0 5px;
+}
+
+.nav-wrapper .nav-item:not(:nth-child(2)){
+    filter: opacity(0.35);
+}
+
+.nav-wrapper .nav-item:hover{
+    filter: opacity(1);
+}
+
+.nav-item a{
+    min-width: 80px;
+    max-width: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item a p{
+    margin-top: 13px;
+}
+
+.services-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services-content-right{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.services-content-right h3{
+    color: #141414;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.services-content-right p{
+    color: #333;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.services-content-left{
+    display: flex;
+    width: 45%;
+}
+
+@media only screen and (max-width:768px){
+    .services-tapsi{
+        padding: 50px 20px;
+    }
+    .services-tapsi h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .services-nav {
+        margin: 20px 0 50px 0;
+    }
+    .nav-wrapper .nav-item:first-child{
+        display: none;
+    }
+    .services-content{
+        flex-direction: column-reverse;
+    }
+    .services-content-right{
+        width: 100%;
+    }
+    .services-content-right h3{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .services-content-right p{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .services-content-left{
+        width: 100%;
+    }
+}
+/* end services section styles */
 
 /* start register section styles */
 .register-tapsi{
